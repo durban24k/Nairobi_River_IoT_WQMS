@@ -131,8 +131,7 @@ label #sidebar-btn:hover{
     background:#0D9DBB;
     display:flex;
     align-items: center;
-    justify-content:center;
-    position:fixed;
+    justify-content:center; 
 }
 .content-body .dash-nav label{
     display:block;
@@ -186,9 +185,8 @@ label #sidebar-btn:hover{
 .content-body .dashboard{
     width:95% auto;
     height:auto;
-    padding:25px;
+    padding:20px;
     background:#a4e7f5;
-    margin-top:5px;
 }
 
 .mobile-nav{
