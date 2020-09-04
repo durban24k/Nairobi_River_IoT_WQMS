@@ -132,6 +132,7 @@ label #sidebar-btn:hover{
     display:flex;
     align-items: center;
     justify-content:center;
+    position:fixed;
 }
 .content-body .dash-nav label{
     display:block;
