@@ -121,12 +121,17 @@ label #sidebar-btn:hover{
 .content-body{
     width:calc(100%-250px);
     margin-top:60px;
-    padding:20px;
     margin-left:250px;
-    background:#a4e7f5;
-    height:100vh;
     transition:0.5s;
 }
+.content-body .dashboard{
+    width:95% auto;
+    height:100%;
+    padding:25px;
+    background:#a4e7f5;
+    margin-top:5px;
+}
+
 .mobile-nav{
     display:none;
 }
