@@ -173,17 +173,6 @@ body{
     max-height: 500px;
 }
 
-.wrapper .main-container{
-    width: (100% - 250px);
-    margin-top: 70px;
-    margin-left: 250px;
-    padding: 15px;
-    background: #c7e9ff;
-    background-size: cover;
-    height: 100vh;
-    transition: 0.3s;
-}
-
 .wrapper.collapse .sidebar{
     width: 70px;
 }
@@ -203,6 +192,20 @@ body{
     padding-left: 3px;
 }
 
+.wrapper .mobile-nav{
+    display:none;
+}
+
+.wrapper .main-container{
+    width: calc(100% - 250px);
+    margin-top: 70px;
+    margin-left: 250px;
+    padding: 15px;
+    background: #c7e9ff;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.3s;
+}
 .wrapper.collapse .main-container{
     width: calc(100% - 70px);
     margin-left: 70px;
@@ -214,9 +217,7 @@ body{
     margin-bottom: 10px;
     font-size: 14px;
 }
-.wrapper .mobile-nav{
-    display:none;
-}
+
 
 
 @media screen and (max-width: 780px){
