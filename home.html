@@ -9,96 +9,101 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </head>
 <body>
-    <input type="checkbox" id="check">
-    <!-- Header Section -->
-    <header>
-        <label for="check">
-            <i class="fas fa-bars" id="sidebar-btn"></i>
-        </label>
-        <div class="left-area">
-            <h3>RealTime <span>WQMS</span></h3>
-        </div>
-        <div class="right-area">
-            <a href="#" class="right-bell"><i class="fas fa-bell"></i></a>
-            <a href="#" class="right-logout"><i class="fas fa-power-off"></i></a>
-        </div>
-    </header>
-    <!-- Header Section End -->
-    <!-- Mobile Nav -->
-    <div class="mobile-nav">
-        <div class="navbar">
-            <img src="./images/profile.jpeg" class="mobile-profile-img" alt="">
-            <i class="fas fa-bars nav-btn"></i>
-        </div>
-        <div class="mobile-nav-items">
-            <a href="#home"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-            <a href="#stations"><i class="fas fa-thumbtack">
-                </i><span>Stations <i class="fas fa-chevron-down drop-down"></i></span>
-            </a>
-            <a href="#sensors"><i class="fas fa-wifi">
-                </i><span>Sensors <i class="fas fa-chevron-down drop-down"></i></span>
-            </a>
-            <a href="#analytics"><i class="fas fa-chart-line"></i><span>Analytics</span></a>
-            <a href="#about"><i class="fas fa-info-circle"></i><span> About</span></a>
-            <a href="#settings"><i class="fas fa-sliders-h"></i><span> Settings</span></a>
-        </div>
-    </div>
-    <!-- Mobile Nav End -->
-    <!-- Sidebar Nav -->
-    <div class="sidebar">
-        <div class="profile-info">
-            <img class="profile-img" src="./images/profile.jpeg">
-            <h4>Alfred</h4>
-        </div>
-        <a href="#home"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-        <a href="#stations"><i class="fas fa-thumbtack"></i><span>Stations <i class="fas fa-chevron-down drop-down"></i></span></a>
-        <a href="#sensors"><i class="fas fa-wifi"></i><span>Sensors <i class="fas fa-chevron-down drop-down"></i></span></a>
-        <a href="#analytics"><i class="fas fa-chart-line"></i><span>Analytics</span></a>
-        <a href="#about"><i class="fas fa-info-circle"></i><span> About</span></a>
-        <a href="#settings"><i class="fas fa-sliders-h"></i><span> Settings</span></a>
-    </div>
-    <!-- Sidebar Nav End -->
-    <!-- Content Body -->
-    <div class="content-body">
-        <div class="dash-nav">
-            <label for="">Choose Date:</label><br>
-            <input class="nav-date" type="date" value="" name="date">
-            <button class="button bouncy"><i class="fas fa-search"></i></button>
-        </div>
-        <div id="home" class="dashboard home">
-            <div class="content-1">
-
+    <!--wrapper start-->
+		<div class="wrapper">
+			<!--header menu start-->
+			<div class="header">
+				<div class="header-menu">
+					<div class="title">R_<span>WQMS</span></div>
+					<div class="sidebar-btn">
+						<i class="fas fa-bars"></i>
+					</div>
+					<ul>
+						<li><a href="#"><i class="fas fa-bell"></i></a></li>
+						<li><a href="#"><i class="fas fa-power-off"></i></a></li>
+					</ul>
+				</div>
+			</div>
+            <!--header menu end-->
+            <!--mobile navigation bar start-->
+            <div class="mobile-nav">
+                <div class="nav-bar">
+                    <img src="./images/profile.jpeg" class="mobile-profile-image" alt="">
+                    <i class="fas fa-bars nav-btn"></i>
+                </div>
+                <div class="mobile-nav-items">
+                    <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+                    <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+                    <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
+                </div>
             </div>
-            <div class="content-cards">
-                <div class="ph-card"></div>
-                <div class="turbidity-card"></div>
-                <div class="ec-card"></div>
-            </div>
-        </div>
-        <div id="stations" class="dashboard stations">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur numquam, impedit, doloribus fugiat architecto repellendus ad aliquam amet iste, quia non cum quibusdam libero totam veritatis officiis et asperiores dolores.</p>
-        </div>
-        <div id="sensors" class="dashboard sensors">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur numquam, impedit, doloribus fugiat architecto repellendus ad aliquam amet iste, quia non cum quibusdam libero totam veritatis officiis et asperiores dolores.</p>
-        </div>
-        <div id="analytics" class="dashboard analytics">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur numquam, impedit, doloribus fugiat architecto repellendus ad aliquam amet iste, quia non cum quibusdam libero totam veritatis officiis et asperiores dolores.</p>
-        </div>
-        <div id="about" class="dashboard about">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur numquam, impedit, doloribus fugiat architecto repellendus ad aliquam amet iste, quia non cum quibusdam libero totam veritatis officiis et asperiores dolores.</p>
-        </div>
-        <div id="settings" class="dashboard settings">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur numquam, impedit, doloribus fugiat architecto repellendus ad aliquam amet iste, quia non cum quibusdam libero totam veritatis officiis et asperiores dolores.</p>
-        </div>
-    </div>
-    <!-- Content Body End -->
-
+            <!--mobile navigation bar end-->
+			<!--sidebar start-->
+			<div class="sidebar">
+				<div class="sidebar-menu">
+					<center class="profile">
+						<img src="./images/profile.jpeg" alt="">
+						<p>Alfred</p>
+					</center>
+					<li class="item">
+						<a href="#" class="menu-btn">
+							<i class="fas fa-desktop"></i><span>Dashboard</span>
+						</a>
+					</li>
+					<li class="item" id="profile">
+						<a href="#profile" class="menu-btn">
+							<i class="fas fa-user-circle"></i><span>Profile <i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+							<a href="#"><i class="fas fa-image"></i><span>Picture</span></a>
+							<a href="#"><i class="fas fa-address-card"></i><span>Info</span></a>
+						</div>
+					</li>
+					<li class="item" id="messages">
+						<a href="#messages" class="menu-btn">
+							<i class="fas fa-envelope"></i><span>Messages <i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+							<a href="#"><i class="fas fa-envelope"></i><span>New</span></a>
+							<a href="#"><i class="fas fa-envelope-square"></i><span>Sent</span></a>
+							<a href="#"><i class="fas fa-exclamation-circle"></i><span>Spam</span></a>
+						</div>
+					</li>
+					<li class="item" id="settings">
+						<a href="#settings" class="menu-btn">
+							<i class="fas fa-cog"></i><span>Settings <i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+							<a href="#"><i class="fas fa-lock"></i><span>Password</span></a>
+							<a href="#"><i class="fas fa-language"></i><span>Language</span></a>
+						</div>
+					</li>
+					<li class="item">
+						<a href="#" class="menu-btn">
+							<i class="fas fa-info-circle"></i><span>About</span>
+						</a>
+					</li>
+				</div>
+			</div>
+			<!--sidebar end-->
+			<!--main container start-->
+			<div class="main-container">
+				
+			</div>
+			<!--main container end-->
+		</div>
+		<!--wrapper end-->
     <script type="text/javascript">
     $(document).ready(function(){
-        $('.nav-btn').click(function(){
-            $('.mobile-nav-items').toggleClass('active');
-        })
-    })
+        $(".nav-btn").click(function(){
+            $(".mobile-nav-items").toggleClass("active");
+        });
+
+        $(".sidebar-btn").click(function(){
+				$(".wrapper").toggleClass("collapse");
+			});
+    });
+
     </script>
 </body>
 </html>
