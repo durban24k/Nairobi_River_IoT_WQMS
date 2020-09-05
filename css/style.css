@@ -10,7 +10,7 @@
 body{
     background: #fff;
 }
-
+/* Header */
 .wrapper .header{
     z-index: 1;
     background: #22242A;
@@ -79,7 +79,9 @@ body{
     background: #4CCEE8;
     color: #fff;
 }
+/* Header End */
 
+/* Side-bar */
 .wrapper .sidebar{
     z-index: 1;
     background: #2F323A;
@@ -191,11 +193,13 @@ body{
     font-size: 18px;
     padding-left: 3px;
 }
+/* Side-Bar End */
 
 .wrapper .mobile-nav{
     display:none;
 }
 
+/* Main Container */
 .wrapper .main-container{
     width: calc(100% - 250px);
     margin-top: 70px;
@@ -203,22 +207,37 @@ body{
     padding: 15px;
     background: #c7e9ff;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     transition: 0.3s;
+    overflow:hidden;
 }
+/* Home-Dashboard */
+.wrapper .main-container .dashboard{
+    min-height:100vh;
+    width:100%;
+    background:green;
+    display:flex;
+}
+.wrapper .main-container .dashboard .map-graph{
+    width:80%;
+    height:700px;
+    background:red;
+}
+/* Home-Dashboard End */
+
+/* Stations */
+.wrapper .main-container .stations{
+    min-height:100vh;
+    width:100%;
+    background:blue;
+    display:flex;
+}
+/* Stations End */
 .wrapper.collapse .main-container{
     width: calc(100% - 70px);
     margin-left: 70px;
 }
-  
-.wrapper .main-container .card{
-    background: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-
+/* Main Container End */
 
 @media screen and (max-width: 780px){
     .wrapper .sidebar{
@@ -234,6 +253,7 @@ body{
       margin-top: 0;
       padding: 10px 20px;
       transition: 0s;
+      width:100%;
     }
   
     .wrapper .mobile-nav{
