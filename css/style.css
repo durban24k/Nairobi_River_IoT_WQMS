@@ -217,6 +217,41 @@ body{
     width:100%;
     padding:10px;
 }
+/* Date Picker */
+.wrapper .main-container .dashboard .date-picker{
+    width:100%;
+    height:50px;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+.wrapper .main-container .dashboard .date-picker label {
+    display: block;
+    font-size:20px;
+    text-transform:uppercase;
+    color:gray;
+    padding:5px;
+}
+.wrapper .main-container .dashboard .date-picker input {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 190px;
+    color:gray;
+}
+/* End Date Picker */
 .wrapper .main-container .dashboard .map-graph{
     width:100%;
     height:auto;
@@ -230,6 +265,28 @@ body{
     height:360px;
     width:500px;
     background:whitesmoke;
+    position:relative;
+}
+.wrapper .main-container .dashboard .map-graph .map-graph-card .graph-card-title{
+    height:15%;
+    width:100%;
+    top:0;
+    background:white;
+    border-bottom:0.5px solid gray;
+}
+.wrapper .main-container .dashboard .map-graph .map-graph-card .graph-card-title span{
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    padding:15px;
+    font-size:16px;
+    text-transform:uppercase;
+    color:gray;
+}
+.wrapper .main-container .dashboard .map-graph .map-graph-card .graph-card-content{
+    height:85%;
+    width:100%;
+    padding:10px;
 }
 .wrapper .main-container .dashboard .current-data{
     width:100%;

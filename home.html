@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin || Dashboard</title>
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	<script src="./js/index.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </head>
@@ -90,12 +92,19 @@
 			<!--main container start-->
 			<div class="main-container">
 				<div class="dashboard" id="dashboard">
+					<div class="date-picker">
+						<label for="dateofbirth">Date:</label>
+						<input type="date" name="dateofbirth" id="dateofbirth">
+					</div>
 					<div class="map-graph">
 						<div class="map-graph-card" id="map-card">
-	
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127643.16249545198!2d36.79798783426968!3d-1.2631125792434714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1731a68ad27b%3A0xfe4ebdad03688041!2sNairobi%20River!5e0!3m2!1sen!2ske!4v1599379947736!5m2!1sen!2ske" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 						</div>
 						<div class="map-graph-card" id="graph-card">
-	
+							<div class="graph-card-title"><span>Average Graph</span></div>
+							<div class="graph-card-content">
+								<canvas id="testChart" style="display: block; width:100%;height:100%;"></canvas>
+							</div>
 						</div>
 					</div>
 					<div class="current-data">
@@ -119,16 +128,53 @@
         <!--wrapper end-->
         
     <script type="text/javascript">
-    $(document).ready(function(){
-        $(".nav-btn").click(function(){
-            $(".mobile-nav-items").toggleClass("active");
-        });
-
-        $(".sidebar-btn").click(function(){
-				$(".wrapper").toggleClass("collapse");
+		$(document).ready(function(){
+			$(".nav-btn").click(function(){
+				$(".mobile-nav-items").toggleClass("active");
 			});
-    });
 
-    </script>
+			$(".sidebar-btn").click(function(){
+					$(".wrapper").toggleClass("collapse");
+				});
+		});
+
+		var ctx = document.getElementById('testChart');
+		var testChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: ['0000', '0600', '1200', '1800', '2400'],
+				datasets: [{
+					label: 'pH Value',
+					data: [10, 13, 4, 7, 2],
+					backgroundColor:'rgba(0, 185, 255, 0.2)',
+					borderColor:'rgba(0, 185, 255, 1)',
+					borderWidth: 1
+				},
+				{
+					label: 'E-C',
+					data: [92,50, 80, 64, 47],
+					backgroundColor:'rgba(77, 255, 0, 0.2)',
+					borderColor:'rgba(77, 255, 0, 1)',
+					borderWidth: 1
+				},
+				{
+					label: 'Turbidity',
+					data: [10, 15, 8, 25, 20],
+					backgroundColor:'rgba(255, 0, 0, 0.2)',
+					borderColor:'rgba(255, 0, 0, 1)',
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+	</script>
 </body>
 </html>
