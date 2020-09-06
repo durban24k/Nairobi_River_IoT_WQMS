@@ -360,27 +360,57 @@ body{
 .wrapper .main-container .stations{
     height:auto;
     width:100%;
-    background:blue;
     padding:10px;
 }
 /* Station Info */
 .wrapper .main-container .stations .station-info{
     display:flex;
     height:auto;
-    background:red;
     width:100%;
     justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
     padding:10px 15px;
 }
+.wrapper .main-container .stations .station-info .station-name{
+    height:50px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom:.5px solid rgba(85, 85, 85,0.4)
+}
+.wrapper .main-container .stations .station-info .station-name span{
+    font-size:20px;
+    font-weight:lighter;
+    text-transform:uppercase;
+    color:rgb(70, 70, 70);
+    padding:10px;
+}
 .wrapper .main-container .stations .station-info .station-info-card{
     height:300px;
     width:320px;
-    background:whitesmoke;
-    margin:5px 0;
+    background:white;
+    margin:10px 0;
 }
 /* Station Info End */
+/* Station Data */
+.wrapper .main-container .stations .station-data{
+    display:flex;
+    height:auto;
+    width: 100%;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:10px 15px;
+}
+.wrapper .main-container .stations .station-data .station-data-card{
+    height:300px;
+    width:320px;
+    background:white;
+    margin:5px 0;
+}
+/* Station Data End */
 /* Stations End */
 
 .wrapper.collapse .main-container{
