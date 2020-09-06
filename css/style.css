@@ -393,6 +393,13 @@ body{
     background:white;
     margin:10px 0;
 }
+.wrapper .main-container .stations .station-info .station-info-card .station-info-title{
+    height:15%;
+    width:100%;
+    border-bottom:.5px solid rgb(204, 204, 204);
+    background:whitesmoke;
+    top:0;
+}
 /* Station Info End */
 /* Station Data */
 .wrapper .main-container .stations .station-data{
@@ -409,6 +416,13 @@ body{
     width:320px;
     background:white;
     margin:5px 0;
+}
+.wrapper .main-container .stations .station-data .station-data-card .station-data-title{
+    height:15%;
+    width:100%;
+    border-bottom:.5px solid rgb(204, 204, 204);
+    background:whitesmoke;
+    top:0;
 }
 /* Station Data End */
 /* Stations End */
