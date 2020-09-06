@@ -381,8 +381,8 @@ body{
     border-bottom:.5px solid rgba(85, 85, 85,0.4)
 }
 .wrapper .main-container .stations .station-info .station-name span{
-    font-size:20px;
-    font-weight:lighter;
+    font-size:30px;
+    font-weight:bolder;
     text-transform:uppercase;
     color:rgb(70, 70, 70);
     padding:10px;
@@ -399,6 +399,20 @@ body{
     border-bottom:.5px solid rgb(204, 204, 204);
     background:whitesmoke;
     top:0;
+}
+.wrapper .main-container .stations .station-info .station-info-card .station-info-title span{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:15px 5px;
+    color:rgb(70, 70, 70);
+    font-size:16px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+.wrapper .main-container .stations .station-info .station-info-card .station-info-data{
+    height:85%;
+    width:100%;
 }
 /* Station Info End */
 /* Station Data */
@@ -423,6 +437,36 @@ body{
     border-bottom:.5px solid rgb(204, 204, 204);
     background:whitesmoke;
     top:0;
+}
+.wrapper .main-container .stations .station-data .station-data-card .station-data-title span{
+    font-size:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 2.5px;
+    color:rgb(70, 70, 70);
+    font-weight:bold;
+}
+.wrapper .main-container .stations .station-data .station-data-card .station-data-content{
+    height:70%;
+    width:100%;
+    background:white;
+}
+.wrapper .main-container .stations .station-data .station-data-card .station-data-footer{
+    bottom:0;
+    height:15%;
+    width:100%;
+    border-top:.5px solid rgb(204, 204, 204);
+    background:whitesmoke;
+}
+.wrapper .main-container .stations .station-data .station-data-card .station-data-footer span{
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    padding:8px;
+    font-size:16px;
+    font-weight:bold;
+    color:rgb(85,85,85);
 }
 /* Station Data End */
 /* Stations End */

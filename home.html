@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin || Dashboard</title>
+    <title>R_WQMS || Dashboard</title>
 	<link href="./css/style.css" rel="stylesheet" type="text/css">
 	<script src="./js/index.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
@@ -152,11 +152,11 @@
 				<div class="stations" id="station1">
 					<div class="station-info">
 						<div class="station-name" id="station-odd">
-							<span>Station 1</span>
+							<span>Station</span>
 						</div>
 						<div id="details" class="station-info-card">
 							<div class="station-info-title">
-
+								<span>Details</span>
 							</div>
 							<div class="station-info-data">
 
@@ -164,11 +164,17 @@
 						</div>
 						<div id="gprs" class="station-info-card">
 							<div class="station-info-title">
-
+								<span>Location Map</span>
+							</div>
+							<div class="station-info-data">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127643.16249545198!2d36.79798783426968!3d-1.2631125792434714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1731a68ad27b%3A0xfe4ebdad03688041!2sNairobi%20River!5e0!3m2!1sen!2ske!4v1599379947736!5m2!1sen!2ske" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 							</div>
 						</div>
 						<div id="alert" class="station-info-card">
 							<div class="station-info-title">
+								<span>Alert Threshold</span>
+							</div>
+							<div class="station-info-data">
 
 							</div>
 						</div>
@@ -176,17 +182,35 @@
 					<div class="station-data">
 						<div id="ph-station" class="station-data-card">
 							<div class="station-data-title">
+								<span>Average pH</span>
+							</div>
+							<div class="station-data-content">
 
+							</div>
+							<div class="station-data-footer">
+								<span>Latest Read: 7.2</span>
 							</div>
 						</div>
 						<div id="turbidity-station" class="station-data-card">
 							<div class="station-data-title">
+								<span>Average Turbidity (NTU)</span>
+							</div>
+							<div class="station-data-content">
 
+							</div>
+							<div class="station-data-footer">
+								<span>Latest Read: 23 NTU</span>
 							</div>
 						</div>
 						<div id="ec-station" class="station-data-card">
 							<div class="station-data-title">
+								<span>Average Conductivity (mS/cm)</span>
+							</div>
+							<div class="station-data-content">
 
+							</div>
+							<div class="station-data-footer">
+								<span>Latest Read: 100 mS/cm</span>
 							</div>
 						</div>
 					</div>
