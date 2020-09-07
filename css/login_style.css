@@ -54,7 +54,7 @@ button {
 label {
     display: block;
     width: 260px;
-    margin: 25px auto;
+    margin: 25px auto 0;
     text-align: center;
 }
 
@@ -73,6 +73,7 @@ input {
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(109, 93, 93, 0.4);
     text-align: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 button {
@@ -111,7 +112,7 @@ button {
 }
 
 .forgot-pass:hover {
-    color: #ff0040;
+    color: #72273a;
 }
 
 .sub-content {
@@ -151,7 +152,7 @@ button {
     top: 0;
     width: 900px;
     height: 100%;
-    background-image: url('./images/nbi.jpg');
+    background-image: url('../images/nbi.jpg');
     background-size: cover;
     -webkit-transition: -webkit-transform 1.2s ease-in-out;
     transition: -webkit-transform 1.2s ease-in-out;
@@ -168,9 +169,9 @@ button {
     background: rgba(0, 0, 0, 0.3);
 }
 
-.content .s-signup .img:before {
+.content.s-signup .img:before {
     -webkit-transform: translate3d(640px, 0, 0);
-    transform: translate3d(640px, 0, 0);
+            transform: translate3d(640px, 0, 0);
 }
 
 .img-text {
@@ -183,8 +184,8 @@ button {
     text-align: center;
     color: #fff;
     -webkit-transition: -webkit-transform 1.2s ease-in-out;
-    transition: -webkit-transform 1.2s ease-in-out;
-    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+            transition: -webkit-transform 1.2s ease-in-out;
+            transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
 
 .img-text h2 {
@@ -199,32 +200,32 @@ button {
 
 .content.s-signup .img-text.m-up {
     -webkit-transform: translateX(520px);
-    transform: translateX(520px);
+            transform: translateX(520px);
 }
 
 .img-text.m-in {
     -webkit-transform: translateX(-520px);
-    transform: translateX(-520px);
+            transform: translateX(-520px);
 }
 
 .content.s-signup .img-text.m-in {
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
 }
 
 .sign-in {
     padding-top: 65px;
     -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
 }
 
-.content .s-signup .sign-in {
+.content.s-signup .sign-in {
     -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
     -webkit-transition-duration: 1.2s;
-    transition-duration: 1.2s;
+            transition-duration: 1.2s;
     -webkit-transform: translate3d(640px, 0, 0);
-    transform: translate3d(640px, 0, 0);
+            transform: translate3d(640px, 0, 0);
 }
 
 .img-btn {
@@ -272,25 +273,25 @@ button {
 
 .img-btn span.m-in {
     -webkit-transform: translateY(-72px);
-    transform: translateY(-72px);
+            transform: translateY(-72px);
 }
 
 .content.s-signup .img-btn span.m-in {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
 }
 
 .content.s-signup .img-btn span.m-up {
     -webkit-transform: translateY(72px);
-    transform: translateY(72px);
+            transform: translateY(72px);
 }
 
 .sign-up {
     -webkit-transform: translate3d(-900px, 0, 0);
-    transform: translate3d(-900px, 0, 0);
+            transform: translate3d(-900px, 0, 0);
 }
 
 .content.s-signup .sign-up {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
 }
