@@ -34,12 +34,12 @@
                     <i class="fas fa-bars nav-btn"></i>
                 </div>
                 <div class="mobile-nav-items">
-                    <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-                    <a href="#"><i class="fas fa-map-pin"></i><span>Stations</span></a>
-					<a href="#"><i class="fas fa-satellite-dish"></i><span>Sensors</span></a>
-					<a href="#"><i class="fas fa-chart-line"></i><span>Analytics</span></a>
-                    <a href="#"><i class="fas fa-cogs"></i><span>Settings</span></a>
-                    <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+                    <a href="#" id="dash-mob-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+                    <a href="#" id="station-mob-link"><i class="fas fa-map-pin"></i><span>Stations</span></a>
+					<a href="#" id="sensors-mob-link"><i class="fas fa-satellite-dish"></i><span>Sensors</span></a>
+					<a href="#" id="analytics-mob-link"><i class="fas fa-chart-line"></i><span>Analytics</span></a>
+                    <a href="#" id="settings-mob-link"><i class="fas fa-cogs"></i><span>Settings</span></a>
+                    <a href="#" id="about-mob-link"><i class="fas fa-info-circle"></i><span>About</span></a>
                 </div>
             </div>
             <!--mobile navigation bar end-->
@@ -50,21 +50,26 @@
 						<img src="./images/profile.jpeg" alt="">
 						<p>Alfred</p>
 					</center>
-					<li class="item">
-						<a href="#" class="menu-btn">
+					<li class="item" id="main-home">
+						<a href="#dashboard" class="menu-btn">
 							<i class="fas fa-desktop"></i><span>Dashboard</span>
 						</a>
 					</li>
-					<li class="item" id="profile">
-						<a href="#profile" class="menu-btn">
+					<li class="item" id="stations">
+						<a href="#stations" class="menu-btn allstations">
 							<i class="fas fa-map-pin"></i><span>Stations <i class="fas fa-chevron-down drop-down"></i></span>
 						</a>
 						<div class="sub-menu">
-							<a href="#station1"><i class="fas fa-map-marker-alt"></i><span>Station 1 & 2</span></a>
-                            <a href="#"><i class="fas fa-map-marker-alt"></i><span>Station 3 & 4</span></a>
-                            <a href="#"><i class="fas fa-map-marker-alt"></i><span>Station 5 & 6</span></a>
-                            <a href="#"><i class="fas fa-map-marker-alt"></i><span>Station 7 & 8</span></a>
-                            <a href="#"><i class="fas fa-map-marker-alt"></i><span>Station 9 & 10</span></a>
+							<a class="station1"><i class="fas fa-map-marker-alt"></i><span>Station 1</span></a>
+                            <a class="station2"><i class="fas fa-map-marker-alt"></i><span>Station 2</span></a>
+                            <a class="station4"><i class="fas fa-map-marker-alt"></i><span>Station 4</span></a>
+							<a class="station5"><i class="fas fa-map-marker-alt"></i><span>Station 5</span></a>
+                            <a class="station3"><i class="fas fa-map-marker-alt"></i><span>Station 3</span></a>
+							<a class="station6"><i class="fas fa-map-marker-alt"></i><span>Station 6</span></a>
+                            <a class="station7"><i class="fas fa-map-marker-alt"></i><span>Station 7</span></a>
+                            <a class="station8"><i class="fas fa-map-marker-alt"></i><span>Station 8</span></a>
+                            <a class="station9"><i class="fas fa-map-marker-alt"></i><span>Station 9</span></a>
+                            <a class="station10"><i class="fas fa-map-marker-alt"></i><span>Station 10</span></a>
 						</div>
 					</li>
 					<li class="item" id="sensors">
@@ -97,6 +102,7 @@
 			<!--sidebar end-->
 			<!--main container start-->
 			<div class="main-container">
+				<!-- Dashboard Start -->
 				<div class="dashboard" id="dashboard">
 					<div class="date-picker">
 						<label for="dateofbirth">Date:</label>
@@ -149,7 +155,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="stations" id="station1">
+				<!-- Dashboard End -->
+				<!-- Stations Start -->
+				<div class="stations" id="station">
 					<div class="station-info">
 						<div class="station-name" id="station-odd">
 							<span>Station</span>
@@ -215,6 +223,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- Stations End -->
 			</div>
 			<!--main container end-->
 		</div>
@@ -227,8 +236,16 @@
 			});
 
 			$(".sidebar-btn").click(function(){
-					$(".wrapper").toggleClass("collapse");
-				});
+				$(".wrapper").toggleClass("collapse");
+			});
+			$("#main-home").click(function(){
+				$(".dashboard").show();
+				$(".stations").hide();
+			});
+			$("#stations").click(function(){
+				$(".stations").show();
+				$(".dashboard").hide();
+			});
 		});
 
 		var ctx = document.getElementById('testChart');

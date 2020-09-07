@@ -137,12 +137,13 @@ body{
     float: right;
     font-size: 12px;
     margin-top: 3px;
+    cursor:pointer;
 }
 
 .wrapper .sidebar .sidebar-menu .item .sub-menu{
     background: #3498DB;
-    overflow: hidden;
-    max-height: 0;
+    overflow: auto;
+    max-height:0;
     transition: 0.3s;
     transition-property: background, max-height;
 }
@@ -160,6 +161,7 @@ body{
 
 .wrapper .sidebar .sidebar-menu .item .sub-menu a:hover{
     background: #55B1F0;
+    cursor:pointer;
 }
 
 .wrapper .sidebar .sidebar-menu .item .sub-menu a:not(last-child){
@@ -172,7 +174,7 @@ body{
 }
 
 .wrapper .sidebar .sidebar-menu .item:target .sub-menu{
-    max-height: 500px;
+    max-height: 600px;
 }
 
 .wrapper.collapse .sidebar{
@@ -211,11 +213,14 @@ body{
     transition: 0.3s;
     overflow:hidden;
 }
+
 /* Home-Dashboard */
 .wrapper .main-container .dashboard{
     height:auto;
     width:100%;
     padding:10px;
+    top:0;
+    display:block;
 }
 /* Date Picker */
 .wrapper .main-container .dashboard .date-picker{
@@ -361,6 +366,8 @@ body{
     height:auto;
     width:100%;
     padding:10px;
+    display:none;
+    display:none;
 }
 /* Station Info */
 .wrapper .main-container .stations .station-info{
