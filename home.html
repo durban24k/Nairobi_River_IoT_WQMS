@@ -36,8 +36,7 @@
                 <div class="mobile-nav-items">
                     <a href="#" id="dash-mob-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
                     <a href="#" id="station-mob-link"><i class="fas fa-map-pin"></i><span>Stations</span></a>
-					<a href="#" id="sensors-mob-link"><i class="fas fa-satellite-dish"></i><span>Sensors</span></a>
-					<a href="#" id="analytics-mob-link"><i class="fas fa-chart-line"></i><span>Analytics</span></a>
+				<a href="#" id="sensors-mob-link"><i class="fas fa-satellite-dish"></i><span>Sensors</span></a>
                     <a href="#" id="settings-mob-link"><i class="fas fa-cogs"></i><span>Settings</span></a>
                     <a href="#" id="about-mob-link"><i class="fas fa-info-circle"></i><span>About</span></a>
                 </div>
@@ -61,15 +60,15 @@
 						</a>
 						<div class="sub-menu">
 							<a class="station1"><i class="fas fa-map-marker-alt"></i><span>Station 1</span></a>
-                            <a class="station2"><i class="fas fa-map-marker-alt"></i><span>Station 2</span></a>
-                            <a class="station4"><i class="fas fa-map-marker-alt"></i><span>Station 4</span></a>
+                            		<a class="station2"><i class="fas fa-map-marker-alt"></i><span>Station 2</span></a>
+                            		<a class="station4"><i class="fas fa-map-marker-alt"></i><span>Station 4</span></a>
 							<a class="station5"><i class="fas fa-map-marker-alt"></i><span>Station 5</span></a>
-                            <a class="station3"><i class="fas fa-map-marker-alt"></i><span>Station 3</span></a>
+                            		<a class="station3"><i class="fas fa-map-marker-alt"></i><span>Station 3</span></a>
 							<a class="station6"><i class="fas fa-map-marker-alt"></i><span>Station 6</span></a>
-                            <a class="station7"><i class="fas fa-map-marker-alt"></i><span>Station 7</span></a>
-                            <a class="station8"><i class="fas fa-map-marker-alt"></i><span>Station 8</span></a>
-                            <a class="station9"><i class="fas fa-map-marker-alt"></i><span>Station 9</span></a>
-                            <a class="station10"><i class="fas fa-map-marker-alt"></i><span>Station 10</span></a>
+                            		<a class="station7"><i class="fas fa-map-marker-alt"></i><span>Station 7</span></a>
+                            		<a class="station8"><i class="fas fa-map-marker-alt"></i><span>Station 8</span></a>
+                            		<a class="station9"><i class="fas fa-map-marker-alt"></i><span>Station 9</span></a>
+                            		<a class="station10"><i class="fas fa-map-marker-alt"></i><span>Station 10</span></a>
 						</div>
 					</li>
 					<li class="item" id="sensors">
@@ -81,11 +80,6 @@
 							<a href="#"><i class="fas fa-flask"></i><span>Turbidity</span></a>
 							<a href="#"><i class="fas fa-bolt"></i><span>E-Conductivity</span></a>
 						</div>
-					</li>
-					<li class="item" id="analytics">
-						<a href="#analytics" class="menu-btn">
-							<i class="fas fa-chart-line"></i><span>Analytics</span>
-						</a>
 					</li>
 					<li class="item" id="settings">
 						<a href="#settings" class="menu-btn">
@@ -224,6 +218,40 @@
 					</div>
 				</div>
 				<!-- Stations End -->
+				<div class="sensors" id="sensors">
+					<div class="sensor-station">
+						<div class="sensor-card-title" id="sensor-one-title"><h2>STATION ONE</h2></div>
+						<div class="card-tab">
+							<div class="sensor-card"id="ph-one"></div>
+						     <div class="sensor-card"id="ec-one"></div>
+							<div class="sensor-card"id="turbidity-one"></div>
+						</div>
+					</div>
+					<div class="sensor-station">
+						<div class="sensor-card-title" id="sensor-one-title"><h2>STATION TWO</h2></div>
+						<div class="card-tab">
+							<div class="sensor-card"id="ph-two"></div>
+						     <div class="sensor-card"id="ec-two"></div>
+							<div class="sensor-card"id="turbidity-two"></div>
+						</div>
+					</div>
+					<div class="sensor-station">
+						<div class="sensor-card-title" id="sensor-one-title"><h2>STATION THREE</h2></div>
+						<div class="card-tab">
+							<div class="sensor-card"id="ph-three"></div>
+						     <div class="sensor-card"id="ec-three"></div>
+							<div class="sensor-card"id="turbidity-three"></div>
+						</div>
+					</div>
+					<div class="sensor-station">
+						<div class="sensor-card-title" id="sensor-one-title"><h2>STATION FOUR</h2></div>
+						<div class="card-tab">
+							<div class="sensor-card"id="ph-four"></div>
+						     <div class="sensor-card"id="ec-four"></div>
+							<div class="sensor-card"id="turbidity-four"></div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!--main container end-->
 		</div>
@@ -241,10 +269,17 @@
 			$("#main-home").click(function(){
 				$(".dashboard").show();
 				$(".stations").hide();
+				$(".sensors").hide();
 			});
 			$("#stations").click(function(){
 				$(".stations").show();
 				$(".dashboard").hide();
+				$(".sensors").hide();
+			});
+			$("#sensors").click(function(){
+				$(".stations").hide();
+				$(".dashboard").hide();
+				$(".sensors").show();
 			});
 		});
 

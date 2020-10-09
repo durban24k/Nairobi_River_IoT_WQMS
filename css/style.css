@@ -262,7 +262,7 @@ body{
     width:100%;
     height:auto;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items:center;
     flex-wrap:wrap;
     padding:10px 15px;
@@ -301,7 +301,7 @@ body{
     width:100%;
     height:auto;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items:center;
     flex-wrap:wrap;
     padding:20px 30px;
@@ -367,14 +367,13 @@ body{
     width:100%;
     padding:10px;
     display:none;
-    display:none;
 }
 /* Station Info */
 .wrapper .main-container .stations .station-info{
     display:flex;
     height:auto;
     width:100%;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items:center;
     flex-wrap:wrap;
     padding:10px 15px;
@@ -427,7 +426,7 @@ body{
     display:flex;
     height:auto;
     width: 100%;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items:center;
     flex-wrap:wrap;
     padding:10px 15px;
@@ -478,6 +477,40 @@ body{
 /* Station Data End */
 /* Stations End */
 
+/* Sensors */
+.wrapper .main-container .sensors{
+    height:auto;
+    width:100%;
+    padding:10px;
+    display:none;
+}
+.wrapper .main-container .sensors .sensor-station{
+    height:auto;
+    width:100%;
+    padding:5px;
+}
+.wrapper .main-container .sensors .sensor-station .sensor-card-title{
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+    height:40px;
+    width:100%;
+    padding:5px;
+    color:rgb(105, 105, 105);
+    border-bottom:.5px solid rgba(0,0,0,0.5);
+}
+.wrapper .main-container .sensors .sensor-station .card-tab{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.wrapper .main-container .sensors .sensor-station .card-tab .sensor-card{
+    height:320px;
+    width:320px;
+    background:white;
+    margin:10px 0;
+}
+/* Sensors End */
 .wrapper.collapse .main-container{
     width: calc(100% - 70px);
     margin-left: 70px;
