@@ -200,7 +200,6 @@ body{
 .wrapper .mobile-nav{
     display:none;
 }
-
 /* Main Container */
 .wrapper .main-container{
     width: calc(100% - 250px);
@@ -475,6 +474,37 @@ body{
     color:rgb(85,85,85);
 }
 /* Station Data End */
+/* Station Graph */
+.wrapper .main-container .stations .station-graph{
+    height:auto;
+    width: 100%;
+    padding:10px 15px;
+    position:relative;
+}
+.wrapper .main-container .stations .station-graph .station-graph-title{
+    height:60px;
+    width:100%;
+    top:0;
+    border-bottom:.5px solid rgb(204, 204, 204);
+    background:whitesmoke;
+}
+.wrapper .main-container .stations .station-graph .station-graph-title span{
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    padding:15px;
+    font-size:20px;
+    font-weight:bold;
+    color:rgb(85,85,85);
+    text-transform:uppercase;
+}
+.wrapper .main-container .stations .station-graph .station-graph-content{
+    padding:20px;
+    height:600px;
+    width:100%;
+    background:white
+}
+/* Station Graph End */
 /* Stations End */
 
 /* Sensors */

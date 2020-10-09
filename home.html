@@ -154,7 +154,7 @@
 				<div class="stations" id="station">
 					<div class="station-info">
 						<div class="station-name" id="station-odd">
-							<span>Station</span>
+							<span>Station One</span>
 						</div>
 						<div id="details" class="station-info-card">
 							<div class="station-info-title">
@@ -214,6 +214,12 @@
 							<div class="station-data-footer">
 								<span>Latest Read: 100 mS/cm</span>
 							</div>
+						</div>
+					</div>
+					<div class="station-graph">
+						<div class="station-graph-title"><span>Station One Graph</span></div>
+						<div class="station-graph-content">
+							<canvas id="testChartOne" style="display: block; width:100%;height:100%;"></canvas>
 						</div>
 					</div>
 				</div>
@@ -283,7 +289,44 @@
 			});
 		});
 
-		var ctx = document.getElementById('testChart');
+		var avg = document.getElementById('testChart');
+		var testChart = new Chart(avg, {
+			type: 'line',
+			data: {
+				labels: ['0000', '0600', '1200', '1800', '2400'],
+				datasets: [{
+					label: 'pH Value',
+					data: [10, 13, 4, 7, 2],
+					backgroundColor:'rgba(0, 185, 255, 0.2)',
+					borderColor:'rgba(0, 185, 255, 1)',
+					borderWidth: 1
+				},
+				{
+					label: 'E-C',
+					data: [92,50, 80, 64, 47],
+					backgroundColor:'rgba(77, 255, 0, 0.2)',
+					borderColor:'rgba(77, 255, 0, 1)',
+					borderWidth: 1
+				},
+				{
+					label: 'Turbidity',
+					data: [10, 15, 8, 25, 20],
+					backgroundColor:'rgba(255, 0, 0, 0.2)',
+					borderColor:'rgba(255, 0, 0, 1)',
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+		var ctx = document.getElementById('testChartOne');
 		var testChart = new Chart(ctx, {
 			type: 'line',
 			data: {
